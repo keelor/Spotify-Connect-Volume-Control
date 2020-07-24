@@ -1,0 +1,47 @@
+{
+    "title": "Spotify Volume Control",
+    "rules": [
+                {
+                    "description": "Map F12 (Key #69) to to Volume(+) AppleScript via Shell",
+                    "manipulators": [
+                        {
+                            "type": "basic",
+                            "from": {
+                                "key_code": 69,
+                                "modifiers": {
+                                    "optional": [
+                                        "any"
+                                    ]
+                                }
+                            },
+                            "to": [
+                                {
+                                    "shell_command": "osascript /Users/keelor/apple_scripts/vol_up.scpt"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "description": "Map F11 (Key #68) to Volume(-) AppleScript via Shell",
+                    "manipulators": [
+                        {
+                            "type": "basic",
+                            "from": {
+                                "key_code": 68,
+                                "modifiers": {
+                                    "optional": [
+                                        "any"
+                                    ]
+                                }
+                            },
+                            "to": [
+                                {
+                                    "shell_command": "osascript /Users/keelor/apple_scripts/vol_down.scpt"
+                                }
+                            ]
+                        }
+                    ]
+                }
+	          ]
+}
