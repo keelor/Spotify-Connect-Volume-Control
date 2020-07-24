@@ -1,0 +1,11 @@
+Mac system volume controls don't change Spotify app volume control when playing through Spotify Connect. The contained AppleScripts, when executed, make a change to system volume and a corresponding change to Spotify App volume. The included JSON is used with Karabiner Elements to trigger the AppleScripts via a shell command upon a key press.
+
+Karabiner Elements:
+  Download: https://karabiner-elements.pqrs.org/
+  Docs: https://karabiner-elements.pqrs.org/docs/json/location/
+  
+Original Reference Instructions: https://bitbucket.org/benseven/macos-spotify-connect-volume-control/src/master/
+  -The script in these instructions only changes Spotify App volume and does not keep System/Spotify in sync.
+  
+  System Volume Reference: https://stackoverflow.com/questions/18169032/increase-volume-by-1-in-applescript
+   
